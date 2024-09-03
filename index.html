@@ -11,11 +11,41 @@
             margin: 0;
             padding: 0;
         }
-        header {
-            background-color: #0F0529;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
+         header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+        }
+
+        .social-icons a:hover {
+            color: #0077b5; /* LinkedIn blue */
+        }
+
+        .social-icons a.github:hover {
+            color: #333; /* GitHub default color */
+        }
+
+        .social-icons a.linkedin:hover {
+            color: #0077b5; /* LinkedIn blue */
         }
         nav {
             background-color: #444;
@@ -64,6 +94,14 @@
 
 <header>
     <h1>Nipuni Hewage</h1>
+    <div class="social-icons">
+        <a href="https://github.com/Nipuni35" target="_blank" class="github">
+            <img src="https://image.flaticon.com/icons/svg/733/733609.svg" alt="GitHub" width="24" height="24">
+        </a>
+        <a href="https://www.linkedin.com/in/nipuni-hewage-b62a07156/" target="_blank" class="linkedin">
+            <img src="https://image.flaticon.com/icons/svg/1409/1409945.svg" alt="LinkedIn" width="24" height="24">
+        </a>
+    </div>
 </header>
 
 <nav>
